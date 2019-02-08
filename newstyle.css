@@ -208,6 +208,7 @@ a:hover{
   width: 100vw;
   background-image: url("background.jpg");
   background-size: cover;
+  background-attachment: fixed;
   font-family: 'Chakra Petch', sans-serif;
 
 }
@@ -218,8 +219,8 @@ a:hover{
   height: 100vh;
   width: 100vw;
   background-image: url("background.jpg");
-
   background-size: cover;
+  background-attachment: fixed;
   font-family: 'Chakra Petch', sans-serif;
 
 }
@@ -231,6 +232,7 @@ a:hover{
   width: 100vw;
   background-image: url("background.jpg");
   background-size: cover;
+  background-attachment: fixed;
   font-family: 'Chakra Petch', sans-serif;
 
 }
