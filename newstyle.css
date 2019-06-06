@@ -145,7 +145,7 @@ a:hover{
   padding: 10px;
   width: 250px;
   height: 350px;
-  background-image: url("arduino.jpg"); 
+  background-image: url("images/arduino.jpg"); 
   background-size: cover;
   border: 1px solid black;
   border-color: #fff8d8;
@@ -159,7 +159,7 @@ a:hover{
   padding: 10px;
   width: 250px;
   height: 350px;
-  background-image: url("fpga.jpg"); 
+  background-image: url("images/fpga.jpg"); 
   background-size: cover;
   border: 1px solid black;
   border-color: #fff8d8;
@@ -173,7 +173,7 @@ a:hover{
   padding: 10px;
   width: 250px;
   height: 350px;
-  background-image: url("webdev.jpg"); 
+  background-image: url("images/webdev.jpg"); 
   background-size: cover;
   border: 1px solid black;
   border-color: #fff8d8;
@@ -184,7 +184,7 @@ a:hover{
 #Home {
   height: 100vh;
   width: 100vw;
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Chakra Petch', sans-serif;
@@ -206,7 +206,7 @@ a:hover{
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Chakra Petch', sans-serif;
@@ -218,7 +218,7 @@ a:hover{
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Chakra Petch', sans-serif;
@@ -230,7 +230,7 @@ a:hover{
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Chakra Petch', sans-serif;
