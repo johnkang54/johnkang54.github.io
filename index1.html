@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Single-Page Site Layout</title>
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+<head>
+  <meta http-equiv="Content-Language" content="en-us">
+  <title> Updog Theme </title>
+  
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700|Montserrat:400,700|Roboto:400,300italic,100italic,100,300,400italic,500,500italic,700,700italic,900,900italic);
+  </style>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+	</script>
+
+</head>
+  
+<body>
+  <div class="page-container">
+
+    <nav>
+      <div class="shade">
+        <ul>
+          <li><a href="#welcome"> Home </a></li>
+          <li><a href="#union"> Projects </a></li>
+          <li><a href="#about"> About </a></li>
+          <!-- <li><a href="#school"> School </a></li> -->
+          <li><a href="#contact"> Contact </a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div id ="welcome"> </div>
+    <div class="section welcome">
+      
+        <img class = "avatar" src="images/jk.png">
+        <h1>John Kang</h1>
+      <h3> Aspiring software developer | Student at University of Southern California </h3>
+    </div>
+
+    <div id ="union"> </div>
+    <div class="section union">
+      <h1>Projects</h1>
+    </div>
+
+    <div id="about"> </div>
+    <div class="section about">
+    </div>
+    
+    
+    
+    <div id ="recent"> </div>
+    <div class="section recent">
+    </div>
+    
+    <div id ="school"> </div>
+    <div class="section school">
+    </div>
+    
+    <div id ="uwyo"> </div>
+    <div class="section uwyo">
+    </div>
+    
+    <div id ="contact"> </div>
+    <div class="section contact">
+    </div>
+    
+    <div id ="site"> </div>
+    <div class="section site">
+    </div>
+    
+  </div>
+
+</body>
+</html>
+  
+  
+
+</body>
+
+</html>
