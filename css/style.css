@@ -125,6 +125,9 @@ li
 /*PAGES*/
 .page-container
 {
+  background-image: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 ​  margin: 0px auto;
   padding: 0px 0px 0px 0px;
   width:100%;
@@ -140,10 +143,6 @@ li
 
 .welcome
 {
-  /* background-color: #447821; */
-  background-image: url("../images/background.jpg");
-  background-size: cover;
-  background-repeat:no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,7 +155,6 @@ li
 {
   display: block;
   border-radius: 100%;
-  
   width: 250px;
   height: 250px;
   
@@ -238,7 +236,6 @@ li
 
 .union
 {
-  background-color: #2E3047;
   align-content: center;
 }
 .union h1
@@ -257,7 +254,6 @@ li
 
 .about
 {
-  background-color: #2E3047;
 }
 
 .about h1
@@ -286,8 +282,6 @@ li
   width:50px;
   height: 50px;
   padding: 10px;
-  /*-webkit-filter: hue-rotate(90deg);
-  filter: hue-rotate(90deg);*/
 }
 
 hr { display: block; height: 1px;
@@ -297,7 +291,6 @@ hr { display: block; height: 1px;
 
 .contact
 {
-  background-color: #2E3047;
 }
 
 .contact h1
