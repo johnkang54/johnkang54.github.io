@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Single-Page Site Layout</title>
+  <title>Personal Website</title>
+  <!-- my css file -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="css/style.css">
 
-  
 </head>
 
 <body>
@@ -22,6 +25,7 @@
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+  <!-- single-page script -->
 	<script>
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
@@ -30,9 +34,7 @@
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
+            $('html,body').animate({scrollTop: target.offset().top}, 1000);
             return false;
           }
         }
@@ -45,6 +47,7 @@
 <body>
   <div class="page-container">
 
+    <!-- tabs -->
     <nav>
       <div class="shade">
         <ul>
@@ -57,52 +60,90 @@
       </div>
     </nav>
     
+    <!-- landing page -->
     <div id ="welcome"> </div>
     <div class="section welcome">
       
         <img class = "avatar" src="images/jk.png">
         <h1>John Kang</h1>
-      <h3> Aspiring software developer | Student at University of Southern California </h3>
+        <h3> Aspiring software developer | Student at University of Southern California </h3>
+        <div id = "media">
+          <a href=https://github.com/> <img class = "icon" src="images/github.png"/></a>
+          <a href=https://www.facebook.com/john.kang.13> <img class = "icon" src="images/facebook.png"/></a>
+          <a href=https://www.linkedin.com/in/johnzkang> <img class = "icon" src="images/linkedinicon.png"/></a>
+          <a href=https://drive.google.com/file/d/1-2ShzbXopEKTY-Ay5I64RkQsvRo09mJh/view?usp=sharing> <img class = "icon" src="images/resume.png"/></a>
+        </div>
     </div>
 
+    <!-- projects -->
     <div id ="union"> </div>
     <div class="section union">
       <h1>Projects</h1>
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              One of three columns
+              
+                  <img  class = "img-thumbnail" src="images/arduino.jpg">
+              
+              
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              One of three columns
+              
+                  <img  class = "img-thumbnail" src="images/arduino.jpg">
+              
+              
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              One of three columns
+              
+                <img  class = "img-thumbnail" src="images/arduino.jpg">
+              
+              
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                One of three columns
+                <img class = "img-thumbnail" src="images/fun.png">
+            </div>
+        </div>
+      </div>
     </div>
 
+    <!-- about me -->
     <div id="about"> </div>
     <div class="section about">
+        <h1>About Me</h1>
+        <div id = "about1">
+            <p>Major: Computer Engineering && Computer Science</p>
+            <p>Year: Senior || Fourth</p>
+            <p>Home: Dallas, Texas</p>
+            <hr></hr>
+              <p>School Life: I recently switched from Electrical Engineering because I saw Software Engineering as a better avenue to share my creativity! </p>
+             <p>I’m in two fraternities, one social and one cultural, Alpha Gamma Omega and Gamma Epsilon Omega. Freshman summer I got ΓEΩ's current fraternity house and Sophomore summer I got ΑΓΩ's current fraternity house.</p>
+              <p>Also in a campus ministry called CRU!</p>
+            <hr></hr>
+            <div id = hobicon>
+              <p>Hobbies: Nature </p><img class = "hobbyicon" src="images/travel.png">
+              <p> Gym </p><img class = "hobbyicon" src="images/gym.png">
+              <p> Videogames </p><img class = "hobbyicon" src="images/fun.png">
+            </div>
+          </div>
     </div>
     
-    
-    
-    <div id ="recent"> </div>
-    <div class="section recent">
-    </div>
-    
-    <div id ="school"> </div>
-    <div class="section school">
-    </div>
-    
-    <div id ="uwyo"> </div>
-    <div class="section uwyo">
-    </div>
-    
+    <!-- contact me -->
     <div id ="contact"> </div>
     <div class="section contact">
-    </div>
-    
-    <div id ="site"> </div>
-    <div class="section site">
-    </div>
-    
+        <h1>Contact</h1>
+        <div id = "contact1">
+            <p style = "display: inline"> Email: </p>
+            <a href="mailto:johnzkan@usc.edu" style="color: #fff8d8">johnzkan@usc.edu</a>
+            <hr></hr>
+            <p>Phone: (972)839-9188</p>
+            <hr></hr>
+            <p>Address: 2831 University Ave. Los Angeles, CA</p>
+          </div>
   </div>
 
 </body>
-</html>
-  
-  
-
-</body>
-
 </html>

@@ -7,7 +7,7 @@
 ::selection 
 {
   color:#fff;
-  background: #7FBE56; /* Safari */
+  background: #BE7C5A; /* Safari */
 }
 
 ::-moz-selection 
@@ -100,15 +100,14 @@ li
   float:left;
 }
 
-a:link,a:visited
+.shade a:link,a:visited
 {
   display:block;
   width: auto;
   color:#FFFFFF;
   text-align:center;
-  padding: 12px 30px 12px 30px;
+  padding: 0px 5px ;
   text-decoration:none;
-  text-transform:uppercase;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   transition: background-color .5s;
@@ -116,18 +115,12 @@ a:link,a:visited
   opacity: 1; !important
 }
 
-a:hover,a:active
+.shade a:hover,a:active
 {
-  background-color:#7A991A;
+  background-color:#BE7C5A;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-
-img
-{
-  border: 0px;
-}
-
 
 /*PAGES*/
 .page-container
@@ -161,7 +154,6 @@ img
 
 .avatar
 {
-  margin-top: 75px;
   display: block;
   border-radius: 100%;
   
@@ -184,6 +176,7 @@ img
   -webkit-animation: fade 2s;
   animation: fade 2s;
 }
+
 .welcome em
 {
   padding: 0px;
@@ -210,18 +203,38 @@ img
 }
 .welcome h3
 {
+  color: #fff8d8;
+  border: 1px solid;
+  border-color: #fff8d8;
+  border-radius: 5px;
+
   flex-wrap: wrap;
-  padding: 16px 10% 50px 80px;
   font-family: 'Roboto', sans-serif;
   font-style: none;
   font-weight: 100;
   font-size: 18px;
   line-height: 100%;
   text-transform: none;
-  color: #71c837;
   -webkit-animation: fade 2s;
   animation: fade 2s;
 }
+
+#media{
+  display: flex;
+  justify-content: center;
+}
+
+.icon{
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+
+}
+
+.icon:hover{
+  transform: scale(1.1);
+}
+
 
 .union
 {
@@ -231,9 +244,15 @@ img
 .union h1
 {
   padding-left: auto;
-  color: #fff;
-  padding: 10%;
-  /* background-color: #2E3047; */
+  color: #fff8d8;
+  padding: 9% 5%;
+}
+
+.img-thumbnail
+{
+  width: 200px;
+  height: 200px;
+  image
 }
 
 .about
@@ -241,146 +260,65 @@ img
   background-color: #2E3047;
 }
 
-.recent
+.about h1
 {
-  background-color: #2E3047;
+  padding-left: auto;
+  color: #fff8d8;
+  padding: 9% 5%;
+  padding-bottom: 4%;
 }
 
-.school
-{
-  background-color: #2E3047;
+#about1{
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid black;
+  border-color: #fff8d8;
+  border-radius: 5px;
+  color: white;
 }
 
-.uwyo
-{
-  background-color: #2E3047;
+#hobicon{
+  display: flex;
 }
+
+.hobbyicon{
+  width:50px;
+  height: 50px;
+  padding: 10px;
+  /*-webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);*/
+}
+
+hr { display: block; height: 1px;
+  border: 0; border-top: 1px solid #fff8d8;
+  margin: 1em 0; padding: 0; }
+
 
 .contact
 {
   background-color: #2E3047;
 }
 
-.site
+.contact h1
 {
-  background-color: #2E3047;
+  padding-left: auto;
+  color: #fff8d8;
+  padding: 9% 5%;
+  padding-bottom: 4%;
+  
 }
 
-/*GRIDS*/
-.grid
-{
-  overflow: hidden;
-  width: 90%;
-  padding: 20px 0px 0px 20px;
-  margin: 0px auto;
-}
-
-.col
-{
-  float: left;
-  padding-right: 20px;
-}
-
-.sixtySix
-{
-  width: 66.66%;
-}
-
-.thirtyThree
-{
-  width: 33.33%;
-}
-
-.fullWidth
-{
-  width:100%
-}
-
-.twentyFive
-{
-  width:25%
-}
-
-.half
-{
+#contact1{
+  margin: auto;
   width: 50%;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #fff8d8;
+  border-radius: 5px;
+  color: #fff8d8;
 }
 
-.module
-{
-  padding: 20px;
-  background-color: #313131;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-
-
-/*SPACERS*/
-.whiteSpace-small
-{
-  overflow: hidden;
-  width: 100%;
-  height: 10px;
-}
-
-.whiteSpace
-{
-  overflow: hidden;
-  width: 100%;
-  height: 20px;
-}
-
-.whiteSpace-medium
-{
-  overflow: hidden;
-  width: 100%;
-  height: 40px;
-}
-
-.whiteSpace-large
-{
-  overflow: hidden;
-  width: 100%;
-  height: 80px;
-}
-
-.whiteSpace-xLarge
-{
-  overflow: hidden;
-  width: 100%;
-  height: 160px;
-}
-
-.whiteSpace-xxLarge
-{
-  overflow: hidden;
-  width: 100%;
-  height: 320px;
-}
-
-
-/*DECORATIVE ELEMENTS*/
-.logo
-{
-  overflow: scroll;
-  float:left;
-  margin: 10px;
-  z-index: 1;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #7A991A;
-  transition: margin .5s, height .5s, width .5s, border-radius .5s;
-}
-
-.logo:hover
-{
-  margin: 0px;
-  padding: 20px;
-  height: 200px;
-  width: 100%;
-  border-radius: 0px;
-}
 
 .shade
 {
