@@ -76,6 +76,7 @@ body
 /*NAVIGATION*/
 nav
 {
+  z-index: 500;
   margin: 0px;
   position: fixed;
   float: right;
@@ -240,16 +241,27 @@ li
 }
 .union h1
 {
+  text-align: center;
   padding-left: auto;
   color: #fff8d8;
-  padding: 9% 5%;
+  padding: 9% 5% 2%;
 }
 
-.img-thumbnail
-{
-  width: 200px;
-  height: 200px;
-  image
+.container{
+  display: flex; 
+}
+
+.card-body{
+  background-color: #fff8d8;
+}
+
+.column{
+  margin: 10px;
+}
+
+.btn{
+  background-color: #4D4E63;
+  border-color: #4D4E63;
 }
 
 .about
@@ -258,9 +270,10 @@ li
 
 .about h1
 {
+  text-align: center;
   padding-left: auto;
   color: #fff8d8;
-  padding: 9% 5%;
+  padding: 9% 5% 2%;
   padding-bottom: 4%;
 }
 
@@ -295,9 +308,10 @@ hr { display: block; height: 1px;
 
 .contact h1
 {
+  text-align: center;
   padding-left: auto;
   color: #fff8d8;
-  padding: 9% 5%;
+  padding: 9% 5% 2%;
   padding-bottom: 4%;
   
 }
